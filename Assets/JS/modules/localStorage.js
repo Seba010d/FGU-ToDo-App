@@ -1,4 +1,4 @@
-const myDataName = "Data";
+const myDataName = "Todos";
 
 export function saveData(data) {
   localStorage.setItem(myDataName, JSON.stringify(data));
