@@ -1,1 +1,14 @@
-// @use "reset";
+@use "variables" as *;
+@use "reset";
+@use "todo-item";
+@use "header";
+@use "add-todo";
+@use "confirmBox";
+
+body {
+  background-color: $clr-bg;
+  color: $clr-text-primary;
+}
+main {
+  padding: 0.5rem;
+}

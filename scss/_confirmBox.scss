@@ -1,0 +1,58 @@
+@use "variables" as *;
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000080;
+  backdrop-filter: blur(4px);
+  z-index: 999;
+}
+
+.confirm-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $clr-card;
+  color: $clr-text-primary;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px #d1d5db;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  p {
+    margin: 0;
+    text-align: center;
+  }
+
+  .button-group {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .yes-btn,
+  .no-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    border: none;
+  }
+
+  .yes-btn {
+    background-color: $clr-danger;
+    color: #ffffff;
+  }
+
+  .no-btn {
+    background-color: #e5e7eb;
+    color: $clr-text-primary;
+  }
+}

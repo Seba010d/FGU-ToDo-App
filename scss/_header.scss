@@ -1,0 +1,14 @@
+@use "variables" as *;
+.main-header {
+  background-color: $clr-Header;
+  color: $clr-text-primary;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 6px #d1d5db;
+  margin-bottom: 3rem;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
