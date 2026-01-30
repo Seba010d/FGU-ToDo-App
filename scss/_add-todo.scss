@@ -5,31 +5,28 @@
   grid-template-columns: 2fr 1fr;
   gap: 0.25rem;
 
+  // Input feltet
   input[type="text"] {
     padding: 0.75rem;
     border-radius: 16px;
     font-size: 1rem;
     border: 1px solid #d1d5db;
     background-color: $clr-card;
-  }
-
-  input[type="text"]::placeholder {
-    color: $clr-text-mutted;
-  }
-
-  input {
-    border: 1px solid #000;
-    padding: 5px;
-    border-radius: 3px;
     outline: none;
     box-shadow: none;
+    transition: outline 0.2s ease;
+
+    &::placeholder {
+      color: $clr-text-mutted;
+    }
+
+    &:focus {
+      outline: 2px solid black !important;
+      box-shadow: none !important;
+    }
   }
 
-  input:focus {
-    outline: 2px solid black !important;
-    box-shadow: none !important;
-  }
-
+  // Knap
   button {
     border-radius: 16px;
     cursor: pointer;
@@ -37,5 +34,11 @@
     background-color: $clr-accent;
     color: $clr-text-primary;
     border: 1px solid #d1d5db;
+    outline: none;
+
+    &:focus {
+      outline: 2px solid black !important;
+      box-shadow: none !important;
+    }
   }
 }

@@ -187,9 +187,16 @@ table {
   font-size: 1rem;
   border: 1px solid #d1d5db;
   background-color: #ffffff;
+  outline: none;
+  box-shadow: none;
+  transition: outline 0.2s ease;
 }
 .add-todo input[type=text]::placeholder {
   color: #6b7280;
+}
+.add-todo input[type=text]:focus {
+  outline: 2px solid black !important;
+  box-shadow: none !important;
 }
 .add-todo button {
   border-radius: 16px;
@@ -198,6 +205,11 @@ table {
   background-color: #3b82f6;
   color: #111827;
   border: 1px solid #d1d5db;
+  outline: none;
+}
+.add-todo button:focus {
+  outline: 2px solid black !important;
+  box-shadow: none !important;
 }
 
 .backdrop {
