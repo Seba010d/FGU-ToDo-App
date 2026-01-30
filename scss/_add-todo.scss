@@ -17,6 +17,11 @@
     color: $clr-text-mutted;
   }
 
+  input:focus {
+    outline: 2px solid black;
+    outline-offset: 2px;
+  }
+
   button {
     border-radius: 16px;
     cursor: pointer;
