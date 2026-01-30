@@ -207,10 +207,6 @@ table {
   border: 1px solid #d1d5db;
   outline: none;
 }
-.add-todo button:focus {
-  outline: 2px solid black !important;
-  box-shadow: none !important;
-}
 
 .backdrop {
   position: fixed;

@@ -35,10 +35,5 @@
     color: $clr-text-primary;
     border: 1px solid #d1d5db;
     outline: none;
-
-    &:focus {
-      outline: 2px solid black !important;
-      box-shadow: none !important;
-    }
   }
 }
